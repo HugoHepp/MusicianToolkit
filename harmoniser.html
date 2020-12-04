@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Composer Toolkit</title>
+		<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+		<script src="myscript.js"></script>
+	</head>
+	<body>
+
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+	 	<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" style="width: 150px;"></a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span>
+	  	</button>
+
+	  	<div class="collapse navbar-collapse" id="navbarsExample03">
+	    	<ul class="navbar-nav ml-auto">
+	      		<li class="nav-item active">
+	        		<a class="nav-link" href="harmoniser.html">Harmoniser <span class="sr-only">(current)</span></a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="modulation.html">Modulation</a>
+	     		</li>
+	     		 <li class="nav-item">
+	        		<a class="nav-link" href="modes.html">Modes</a>
+	      		</li>
+	    	</ul>
+	    </div>
+	</nav>
+
+
+
+
+
+
+	 	<div class="container-fluid" style="margin-top: 7%;">
+	 		<div class="row justify-content-center">
+	 			<div class="col-lg-12 d-flex justify-content-center">
+					<h1>Harmoniser</h1>
+	 			</div>
+	 			<div class="col-lg-12 d-flex justify-content-center" style=" margin-left: 45px;">
+					<p style="line-height: 30px">The easiest way to make your pallet of chords <br>Choose a key, find your progression and make music!<br> Try it with I-VI-V , II-V-I, I-V-VI-IV or I-VI-IV-V. </p>
+	 			</div>
+			    <div class="col-lg-5 -auto"></div>
+	 		</div>
+	 	</div>
+
+	 	<div class="container-fluid" style="margin-top: 20px;">
+	 		<div class="row justify-content-center">
+	 			<div class="col-lg-auto d-flex justify-content-center"  style="margin-top: 15px;">
+	 				<div id="keychoice">
+	 					<p>First, choose your key!</p>
+						<button type="button" class="btn btn-warning" onclick="keyselectc()">C</button>
+						<button type="button" class="btn btn-warning" onclick="keyselectd()">D</button>
+						<button type="button" class="btn btn-warning" onclick="keyselecte()">E</button>
+						<button type="button" class="btn btn-warning" onclick="keyselectf()">F</button>
+						<button type="button" class="btn btn-warning" onclick="keyselectg()">G</button>
+						<button type="button" class="btn btn-warning" onclick="keyselecta()">A</button>
+						<button type="button" class="btn btn-warning" onclick="keyselectb()">B</button>
+						<button type="button" class="btn btn-warning" style="margin-top: 10px" onclick="keyselectdb()">Db</button>
+						<button type="button" class="btn btn-warning" style="margin-top: 10px" onclick="keyselecteb()">Eb</button>
+						<button type="button" class="btn btn-warning" style="margin-top: 10px" onclick="keyselectgb()">Gb</button>
+						<button type="button" class="btn btn-warning" style="margin-top: 10px" onclick="keyselectab()">Ab</button>
+						<button type="button" class="btn btn-warning" style="margin-top: 10px" onclick="keyselectbb()">Bb</button>
+					</div>
+				</div>
+				<div class="col-lg-auto -12 d-flex justify-content-center" style="margin-top: 15px;">
+					<div id="tonalchoice">
+						<p>Then, choose your tonality!</p>
+						<button type="button" class="btn btn-warning btn-lg" style="margin-top:15px;" onclick=";keytonmaj();myFunction()">Major</button>
+						<button type="button" class="btn btn-warning btn-lg" style="margin-left: 20px; margin-top:17px;" onclick="keytonmin();myFunction()">Minor</button>
+					</div>
+				</div>
+				<div class="col-lg-auto -12 d-flex justify-content-center" style="margin-top: 15px;">
+					<div id="result">
+					<p id="waiting">. . .</p>
+					<p id="datares"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+</body>
+
+
